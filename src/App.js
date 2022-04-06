@@ -1,5 +1,7 @@
 import React from "react";
 import io from 'socket.io-client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from "react-bootstrap";
 
 function App() {
     const connectSocket = () => {
@@ -17,9 +19,9 @@ function App() {
                     type="text"
                     placeholder="Введите имя"
                 />
-                <button>
+                <Button variant="primary">
                     ТЫК
-                </button>
+                </Button>
             </div>
         </div>
     );
